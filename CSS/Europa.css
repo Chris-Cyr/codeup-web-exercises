@@ -1,0 +1,25 @@
+#coolio {
+    background-color: crimson;
+    color: mintcream;
+    text-decoration: black underline;
+}
+
+.awesome {
+    color: orangered;
+}
+
+li {
+    color: palegoldenrod;
+    background-color: navy;
+}
+
+ol {
+    color: brown;
+    background-color: yellow;
+}
+
+h2 {
+    text-decoration: black underline;
+    text-decoration: yellow line-through;
+    text-shadow: 2px 2px 2px green;
+}
