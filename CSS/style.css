@@ -1,17 +1,26 @@
 h1.fancy-header {
-    color: purple;
+    color: #EDF5E1;
     text-align: center;
+    font-family: "Lucida Grande";
+    font-size: 500%;
 }
-
+#bigness {
+    font-size: larger;
+}
 h1, h2, h3, h4, h5, h6 {
-    color: blue;
-    text-decoration: black underline;
+    color: #053568;
 }
 
+hr {
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #35927F;
+    margin: 1em 0; padding: 0;
+}
 body {
     font-family: sans-serif, "Comic Sans MS";
-    background-color: limegreen;
-    background-image: url("https://media.istockphoto.com/photos/yellow-background-picture-id1032083272?k=6&m=1032083272&s=612x612&w=0&h=UfQGfNpNfFtsH0-WKb-QT7wydzdXB7yTY5Hc9iWm_l4=")
+    font-size: larger;
+    color: #EDF5E1;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-e-Rp8a5fSbID2reR6N1jF8zDshG3P4-5lRAIM8oupaNkKd8&s")
 }
 
 ol {
@@ -36,16 +45,28 @@ tr {
     font-size: larger;
 }
 
+th {
+    padding: 6px 6px 6px;
+    color: #35927F;
+    font-size: larger;
+}
 a:active {
-    color: blue;
-    text-decoration: blue underline;
+    color: #053568;
+    text-decoration: #BEE9CD underline;
 }
 
 a:visited {
-    color: darkred;
-    text-decoration: darkred underline;
+    color: yellow;
+    text-decoration: #053568 underline;
 }
 
 a:hover {
-    color: black;
+    color: #35927F;
 }
+
+/*colors used
+#053568
+#35927F
+#69E8A1
+#BEE9CD
+#EDF5E1*/
