@@ -1,3 +1,51 @@
-#fancy-header {
+h1.fancy-header {
     color: purple;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: blue;
+    text-decoration: black underline;
+}
+
+body {
+    font-family: sans-serif, "Comic Sans MS";
+    background-color: limegreen;
+    background-image: url("https://media.istockphoto.com/photos/yellow-background-picture-id1032083272?k=6&m=1032083272&s=612x612&w=0&h=UfQGfNpNfFtsH0-WKb-QT7wydzdXB7yTY5Hc9iWm_l4=")
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul {
+    list-style: circle;
+}
+
+table {
+    padding: 6px 6px 6px;
+}
+
+td {
+    padding: 6px 6px 6px;
+    font-size: larger;
+}
+
+tr {
+    padding: 6px 6px 6px;
+    font-size: larger;
+}
+
+a:active {
+    color: blue;
+    text-decoration: blue underline;
+}
+
+a:visited {
+    color: darkred;
+    text-decoration: darkred underline;
+}
+
+a:hover {
+    color: black;
 }
