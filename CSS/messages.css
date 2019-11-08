@@ -1,0 +1,50 @@
+/*RULES*/
+
+body, html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+div {
+    border: lightgrey solid 1px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 10px;
+    /*font-family: Arial, Ubuntu, sans-serif;*/
+    text-indent: 5px;
+    padding: 4px;
+
+}
+.message-info{
+    box-sizing: content-box;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    color: #372F93;
+    background-color: #CDDEFF;
+}
+
+.message-success{
+    box-sizing: content-box;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    color: #509A6D;
+    background-color: #CFF3DA;
+}
+
+.message-warning{
+    box-sizing: content-box;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    color: #8B770D;
+    background-color: #FCFAC9;
+}
+
+.message-error{
+    box-sizing: content-box;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    color: #9E4157;
+    background-color: #FAD2D7;
+}
