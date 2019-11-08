@@ -4,8 +4,12 @@ h1.fancy-header {
     font-family: "Lucida Grande";
     font-size: 500%;
 }
-#bigness {
+.bigness {
     font-size: larger;
+}
+
+.realBigness {
+    font-size: xx-large;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #053568;
@@ -20,24 +24,41 @@ body {
     font-family: sans-serif, "Comic Sans MS";
     font-size: larger;
     color: #EDF5E1;
+    text-align: center;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5-e-Rp8a5fSbID2reR6N1jF8zDshG3P4-5lRAIM8oupaNkKd8&s")
 }
 
 ol {
-    list-style: upper-roman;
+    list-style: armenian;
+    display: table;
+    margin: 0px auto;
 }
 
 ul {
-    list-style: circle;
+    list-style: armenian;
+    display: table;
+    margin: 0px auto;
 }
 
-table {
-    padding: 6px 6px 6px;
+.centerTable {
+    margin: 0px auto;
+}
+
+body.thl {
+    text-align: left;
+}
+
+body.thc {
+    text-align: center;
+}
+
+body.thr {
+    text-align: right;
 }
 
 td {
     padding: 6px 6px 6px;
-    font-size: larger;
+    font-size: large
 }
 
 tr {
@@ -49,10 +70,13 @@ th {
     padding: 6px 6px 6px;
     color: #35927F;
     font-size: larger;
+
 }
-a:active {
+body>a {
     color: #053568;
-    text-decoration: #BEE9CD underline;
+    text-decoration: #EDF5E1 underline;
+    font-size: larger;
+    text-align: center;
 }
 
 a:visited {
@@ -62,6 +86,25 @@ a:visited {
 
 a:hover {
     color: #35927F;
+}
+
+.splitImage {
+    max-height: 100%;
+    max-width: 100%;
+    width: 38%;
+    height: 38%;
+}
+
+.keepTogether {
+    max-width: 100%;
+    max-height: 100%;
+    width: 38%;
+    height: 38%;
+    margin: 0px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 0;
+    word-spacing: -6px;
 }
 
 /*colors used
