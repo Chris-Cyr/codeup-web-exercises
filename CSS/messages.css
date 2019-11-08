@@ -7,12 +7,13 @@ body, html{
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
-div {
+
+.message {
+
     border: lightgrey solid 1px;
-    border-radius: 10px;
+    border-radius: 7px;
     margin: 5px;
     font-size: 10px;
-    /*font-family: Arial, Ubuntu, sans-serif;*/
     text-indent: 5px;
     padding: 4px;
 
