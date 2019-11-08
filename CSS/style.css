@@ -2,7 +2,7 @@ h1.fancy-header {
     color: #EDF5E1;
     text-align: center;
     font-family: "Lucida Grande";
-    font-size: 500%;
+    font-size: 400%;
 }
 .bigness {
     font-size: larger;
@@ -44,6 +44,10 @@ ul {
     margin: 0px auto;
 }
 
+table, th, tr, td {
+    padding: 10px 10px 10px;
+}
+
 body.thl {
     text-align: left;
 }
@@ -57,21 +61,19 @@ body.thr {
 }
 
 td {
-    padding: 6px 6px 6px;
     font-size: large
 }
 
 tr {
-    padding: 6px 6px 6px;
     font-size: larger;
 }
 
 th {
-    padding: 6px 6px 6px;
     color: #35927F;
     font-size: larger;
 
 }
+
 body>a {
     color: #053568;
     text-decoration: #EDF5E1 underline;
