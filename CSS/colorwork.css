@@ -1,0 +1,117 @@
+h1.fancy-header {
+    color: #EDF5E1;
+    text-align: center;
+    font-family: "Lucida Grande";
+    font-size: 400%;
+}
+.bigness {
+    font-size: larger;
+}
+
+.realBigness {
+    font-size: xx-large;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #2057c9;
+}
+
+hr {
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #00caf6;
+    margin: 1em 0; padding: 0;
+}
+body {
+    font-family: sans-serif, "Comic Sans MS";
+    font-size: larger;
+    color: #feddff;
+    text-align: center;
+    background-color: #fe22ea;
+}
+
+ol {
+    list-style: armenian;
+    display: table;
+    margin: 0px auto;
+}
+
+ul {
+    list-style: armenian;
+    display: table;
+    margin: 0px auto;
+}
+
+.centerTable {
+    margin: 0px auto;
+}
+
+table, th, tr, td {
+    padding: 4px 4px 4px;
+}
+
+/*body.thl {*/
+/*    text-align: left;*/
+/*}*/
+
+/*body.thc {*/
+/*    text-align: center;*/
+/*}*/
+
+/*body.thr {*/
+/*    text-align: right;*/
+/*}*/
+
+td {
+    font-size: large
+}
+
+tr {
+    font-size: larger;
+}
+
+th {
+    color: #2057c9;
+    font-size: larger;
+
+}
+
+body>a {
+    color: #2057c9;
+    text-decoration: #00caf6 underline;
+    font-size: larger;
+    text-align: center;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration: #053568 underline;
+}
+
+a:hover {
+    color: #6217b6;
+}
+
+.splitImage {
+    max-height: 100px;
+    width: 100px;
+    /*    width: 38%;*/
+    /*    height: 38%;*/
+}
+
+.keepTogether {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 0;
+    word-spacing: -6px;
+}
+
+/*colors used
+#053568
+#35927F
+#69E8A1
+#BEE9CD
+#EDF5E1*/
