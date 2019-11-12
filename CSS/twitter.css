@@ -1,3 +1,5 @@
+/*If you're grading this, I did the exercise the way it was given but then when I finished I got bored and so I churched it up...ignore the Googly Eyes, or Don't. It's your adventure after all.*/
+
 :root {
     --main-bg: #E6ECF0;
     --link-color: #3B94D9;
@@ -25,17 +27,28 @@ header {
 a {
     color: var(--link-color);
 }
+
 .top-nav {
     background: var(--light-bg);
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: #00AAF0;
 }
+
+/*Header*/
 
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.nav-pic{
+    float: left;
+    padding: .5em;
+    height: 65px;
+    width: 65px;
 }
 
 .nav-item {
@@ -44,7 +57,7 @@ a {
 }
 
 .nav-link {
-    color: var(--main-link-color);
+    color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
 }
@@ -52,29 +65,37 @@ a {
     color: var(--link-color);
 }
 
+/*Profile Details*/
+.googly-eyes{
+    float: left;
+    height: 35px;
+    width: 80px;
+    position: absolute;
+    top: 292px;
+    left: 32px;
+    z-index: 1;
+}
 .profile {
-    background: var(--light-bg);
+    background: #00AAF0;
     height: 80px;
 }
 
 .profile-form {
     float: right;
     line-height: 80px;
+    margin-right: .5em;
 }
 
 .profile-details {
     float: left;
     width: calc(25% - 1em);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: .5em;
-    margin-left: .5em;
+    margin: 0 .5em;
 }
 
 .profile-image {
     float: left;
     position: absolute;
-    top: 250px;
+    top: 245px;
 }
 
 .profile-items{
@@ -89,24 +110,18 @@ a {
 .timeline {
     float: left;
     width: calc(50% - 1em);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: .5em;
-    margin-left: .5em;
+    margin: 0 .5em;
 }
 
 .who-to-follow {
     float: right;
     width: calc(25% - 1em);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: .5em;
-    margin-left: .5em;
+    margin: 0 .5em;
 }
 
 .container {
-    margin-bottom: 2em;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .media {
@@ -139,6 +154,7 @@ a {
 .btn-large {
     font-size: 1.3em;
     padding: 10px;
+    color: black;
 }
 .img-circle {
     border-radius: 100%;
@@ -147,6 +163,21 @@ a {
 .text-right {
     text-align: right;
 }
-.text-muted {
-    color: var(--main-link-color);
+
+/*.text-muted {*/
+/*    color: var(--main-link-color);*/
+/*}*/
+
+.profile-link:active {
+    color: #00caf6;
+    text-decoration: #00caf6 underline;
 }
+
+.profile-link:hover {
+    color: #00008B;
+    text-decoration: #00caf6 underline;
+}
+
+/*.profile-link:visited {*/
+/*    color: crimson;*/
+/*}*/
