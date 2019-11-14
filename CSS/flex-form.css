@@ -55,8 +55,7 @@ body {
 .cover {
     /*display:flex;*/
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 .flex-form {
    display: inline-flex;
@@ -65,5 +64,6 @@ body {
     /* flex items */
 }
 .destination {
-    flex-basis: 40%;/* bigger item */
+    flex-basis: 15em;
+    /* bigger item */
 }

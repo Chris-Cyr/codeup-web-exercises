@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');*/
-
 * {
     box-sizing: border-box;
 }
@@ -8,42 +6,54 @@ body {
 }
 nav {
     background: #C1C1C1;
-    /*justify-content: center;*/
-    justify-content:space-between;
-    align-items: center;
-    /*margin: auto;*/
-    /*display: inline-block;*/
-    /*wrap: no wrap;*/
+    justify-content: space-between;
+    font-weight: bold;
 }
 
 article {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*font-family: "Montserrat";*/
+    padding-bottom: .5em;
 }
 ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    display: inline-flex;
+    font-family: "Work Sans";
+    /*font-weight: bold;*/
+}
+
+.ul-one{
     display: flex;
+    justify-items: flex-start;
+    padding-left: 0;
+    margin-left: 0;
     font-family: "Work Sans";
 }
 
+.ul-two{
+    align-items: center;
+    padding-right: 0;
+}
 
 h1 {
-    justify-self: center;
+    display:flex;
+    align-self: center;
     font-family: Montserrat;
     font-size: 3em;
     padding-top: .2em;
     padding-bottom: .2em;
+    position: absolute;
+    margin: 0;
+    left: 42%;
+    margin-right: -42%;
+
 }
 
 nav a {
     text-decoration: none;
     color: #000000;
-    /*font-family: "Work Sans";*/
-    /*display: inline-block;*/
     padding: 1em;
 }
 nav a:hover {
