@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+main {
+    /* add margin to make the top of our grid more visible */
+    justify-content: left;
+    margin: auto;
+    border: 1px solid lightgrey;
+    background: white;
+    display: grid;
+    grid-gap: 1em;
+    padding: .5em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    /*Nav Bar;*/
+    grid-area: 2 / 1 / 2 / 4;
+    background-color: black;
+    color: white;
+}
+.div2 {
+    /*left column*/
+    grid-area: 2 / 1 / 21 / 2;
+}
+.div3 {
+    /*ad 1 small;*/
+    grid-area: 3 / 3 / 4 / 4; }
+.div4 {
+    /*ad 1 big;*/
+    grid-area: 4 / 3 / 6 / 4; }
+.div5 {
+    /*ad 2 small;*/
+    grid-area: 7 / 3 / 8 / 4; }
+.div6 {
+    /*ad 2 big;*/
+    grid-area: 8 / 3 / 10 / 4; }
+.div7 {
+    /*ad 3 small;*/
+    grid-area: 11 / 3 / 12 / 4; }
+.div8 {
+    /*ad 3 big;*/
+    grid-area: 12 / 3 / 14 / 4; }
+.div9 {
+    /*page number icons;*/
+    grid-area: 15 / 2 / 16 / 3; }
+.div10 {
+    /*footer top;*/
+    grid-area: 16 / 2 / 19 / 4; }
+.div11 {
+    /*footer bottom;*/
+    grid-area: 19 / 2 / 20 / 4; }
+.div12 {
+    /*center heading paragraph 1;*/
+    grid-area: 3 / 2 / 6 / 3; }
+.div13 {
+    /*center heading paragraph 2;*/
+    grid-area: 7 / 2 / 10 / 3; }
+.div14 {
+    /*center heading paragraph 3;*/
+    grid-area: 11 / 2 / 14 / 3; }
+
+#logo{
+    background-color: gray;
+}
