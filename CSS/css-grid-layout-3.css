@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+main {
+    /* add margin to make the top of our grid more visible */
+    justify-content: left;
+    margin: auto;
+    border: 1px solid lightgrey;
+    background: white;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: .5em;
+    /*!*grid-gap: 20pFDDA00*/
+}
+
+.div1 {
+    background-color: #FDDA00;
+    grid-area: 1 / 1 / 2 / 5;
+    padding: 1em;
+}
+.div2 {
+    background-color: #FDDA00;
+    grid-area: 2 / 1 / 6 / 2;
+    padding: 1em;
+}
+.div3 {
+    background-color: #FDDA00;
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 1em;
+}
+.div4 {
+    background-color: #FDDA00;
+    grid-area: 2 / 3 / 3 / 5;
+    padding: 1em;
+}
+.div5 {
+    background-color: #FDDA00;
+    grid-area: 3 / 2 / 4 / 4;
+    padding: 1em;
+}
+.div6 {
+    background-color: #FDDA00;
+    grid-area: 3 / 4 / 4 / 5;
+    padding: 1em;
+}
+.div7 {
+    background-color: #FDDA00;
+    grid-area: 4 / 2 / 5 / 3;
+    padding: 1em;
+}
+.div8 {
+    background-color: #FDDA00;
+    grid-area: 4 / 3 / 5 / 4;
+    padding: 1em;
+}
+.div9 {
+    background-color: #FDDA00;
+    grid-area: 4 / 4 / 5 / 5;
+    padding: 1em;
+}
+.div10 {
+    background-color: #FDDA00;
+    grid-area: 5 / 2 / 6 / 5;
+    padding: 1em;
+}

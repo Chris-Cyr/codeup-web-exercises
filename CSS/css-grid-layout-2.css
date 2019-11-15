@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+main {
+    /* add margin to make the top of our grid more visible */
+    justify-content: left;
+    margin: auto;
+    border: 1px solid black;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    padding: .5em;
+    /*grid-gap: 20px;*/
+}
+
+.header1 {
+    grid-area: 1 / 1 / 2 / 6;
+    background-color: #9BCE0A;
+    padding: 2em;
+}
+.nav1 {
+    grid-area: 2 / 1 / 5 / 2;;
+    background-color: #9BCE0A;
+    padding: 2em;
+}
+.article1 {
+    grid-area: 2 / 2 / 4 / 6;
+    background-color: #9BCE0A;
+    padding: 2em;
+}
+.ads1 {
+    grid-area: 4 / 2 / 5 / 6;
+    background-color: #9BCE0A;
+    padding: 2em;
+}
+.footer1 {
+    grid-area: 5 / 1 / 6 / 6;
+    background-color: #9BCE0A;
+    padding: 2em;
+}
+
+/*.div1 { grid-area: 1 / 1 / 2 / 6; }*/
+/*.div2 { grid-area: 2 / 1 / 5 / 2; }*/
+/*.div3 { grid-area: 2 / 2 / 4 / 6; }*/
+/*.div4 { grid-area: 4 / 2 / 5 / 6; }*/
+/*.div5 { grid-area: 5 / 1 / 6 / 6; }*/
+
