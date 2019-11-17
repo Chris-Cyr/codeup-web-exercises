@@ -9,65 +9,181 @@ body {
 
 main {
     /* add margin to make the top of our grid more visible */
-    justify-content: left;
-    margin: auto;
     border: 1px solid lightgrey;
     background: white;
     display: grid;
+    height: 150vh;
+    width: 100vw;
     grid-gap: 1em;
     padding: .5em;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(19, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: 17.5% 56% 26.5%;
+    grid-template-rows: 3.75% 21.25% 25% 25% 7% 12%;
+    grid-template-areas:
+        "header header header"
+        "nav-left heading1 ad1"
+        "nav-left heading2 ad2"
+        "nav-left heading3 ad3"
+        "nav-left pages pages"
+        "nav-left footer footer";
+    /*grid-column-gap: 0;*/
+    /*grid-row-gap: 0px;*/
 }
 
-.div1 {
+.header {
     /*Nav Bar;*/
-    grid-area: 2 / 1 / 2 / 4;
+   grid-area: header;
+   /* display: flex;*/
     background-color: black;
     color: white;
 }
-.div2 {
+
+.nav-left {
     /*left column*/
-    grid-area: 2 / 1 / 21 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: nav-left;
+    background-color: #F0F0F0;
 }
-.div3 {
+ ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     list-style: none;
+     padding: .5em;
+ }
+
+ li {
+     margin-bottom: 1em;
+ }
+
+.heading1 {
     /*ad 1 small;*/
-    grid-area: 3 / 3 / 4 / 4; }
-.div4 {
+    grid-area: heading1;
+}
+
+
+.heading2 {
     /*ad 1 big;*/
-    grid-area: 4 / 3 / 6 / 4; }
-.div5 {
+    grid-area: heading2; }
+
+
+.heading3 {
     /*ad 2 small;*/
-    grid-area: 7 / 3 / 8 / 4; }
-.div6 {
+    grid-area: heading3; }
+
+
+.ad1 {
     /*ad 2 big;*/
-    grid-area: 8 / 3 / 10 / 4; }
-.div7 {
+    grid-area: ad1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+
+#ad-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .01em solid lightgrey;
+    height: 33%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#ad-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .01em solid lightgrey;
+    height: 66%;
+    width: 100%;
+}
+
+.ad2 {
     /*ad 3 small;*/
-    grid-area: 11 / 3 / 12 / 4; }
-.div8 {
+    grid-area: ad2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-right: 1em;}
+
+
+#ad-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .01em solid lightgrey;
+    height: 33%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#ad-d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .01em solid lightgrey;
+    height: 66%;
+    width: 100%;
+}
+
+.ad3 {
     /*ad 3 big;*/
-    grid-area: 12 / 3 / 14 / 4; }
-.div9 {
+    grid-area: ad3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-right: 1em;}
+
+
+#ad-e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .01em solid lightgrey;
+    height: 33%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#ad-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .01em solid lightgrey;
+    height: 66%;
+    width: 100%;
+}
+.pages {
     /*page number icons;*/
-    grid-area: 15 / 2 / 16 / 3; }
-.div10 {
+    grid-area: pages; }
+
+.ul-2 {
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.li-2 {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footers {
     /*footer top;*/
-    grid-area: 16 / 2 / 19 / 4; }
-.div11 {
-    /*footer bottom;*/
-    grid-area: 19 / 2 / 20 / 4; }
-.div12 {
-    /*center heading paragraph 1;*/
-    grid-area: 3 / 2 / 6 / 3; }
-.div13 {
-    /*center heading paragraph 2;*/
-    grid-area: 7 / 2 / 10 / 3; }
-.div14 {
-    /*center heading paragraph 3;*/
-    grid-area: 11 / 2 / 14 / 3; }
+    grid-area: footers; }
+
 
 #logo{
     background-color: gray;
