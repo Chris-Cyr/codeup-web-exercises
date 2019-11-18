@@ -9,14 +9,14 @@ body {
 
 main {
     /* add margin to make the top of our grid more visible */
-    border: 1px solid lightgrey;
+    /*border: 1px solid lightgrey;*/
     background: white;
     display: grid;
     height: 150vh;
     width: 100vw;
-    grid-gap: 1em;
+    /*grid-gap: 1em;*/
     padding: .5em;
-    grid-template-columns: 17.5% 56% 26.5%;
+    grid-template-columns: 15% 52% 23%;
     grid-template-rows: 3.75% 21.25% 25% 25% 7% 12%;
     grid-template-areas:
         "header header header"
@@ -24,17 +24,20 @@ main {
         "nav-left heading2 ad2"
         "nav-left heading3 ad3"
         "nav-left pages pages"
-        "nav-left footer footer";
+        "nav-left footers footers";
     /*grid-column-gap: 0;*/
     /*grid-row-gap: 0px;*/
 }
 
 .header {
     /*Nav Bar;*/
-   grid-area: header;
-   /* display: flex;*/
+    grid-area: header;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items:  center;
     background-color: black;
     color: white;
+    padding-left: .5em;
 }
 
 .nav-left {
@@ -57,20 +60,31 @@ main {
      margin-bottom: 1em;
  }
 
+ h1{
+     color: #419388;
+ }
 .heading1 {
     /*ad 1 small;*/
     grid-area: heading1;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 
 .heading2 {
     /*ad 1 big;*/
-    grid-area: heading2; }
+    grid-area: heading2;
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 
 .heading3 {
     /*ad 2 small;*/
-    grid-area: heading3; }
+    grid-area: heading3;
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 
 .ad1 {
@@ -80,7 +94,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 1em;
+    margin-top: 1em;
+    /*margin-right: 1em;*/
 }
 
 
@@ -110,9 +125,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    margin-right: 1em;}
-
+    margin-top: 2em;
+    /*margin-right: 1em;}*/
+}
 
 #ad-c{
     display: flex;
@@ -140,9 +155,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
-    margin-right: 1em;}
-
+    margin-top: 2em;
+    /*margin-right: 1em;}*/
+}
 
 #ad-e {
     display: flex;
@@ -164,7 +179,11 @@ main {
 }
 .pages {
     /*page number icons;*/
-    grid-area: pages; }
+    grid-area: pages;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .ul-2 {
     display: inline-block;
@@ -182,8 +201,34 @@ main {
 
 .footers {
     /*footer top;*/
-    grid-area: footers; }
+    grid-area: footers;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1em;
+    margin-right: 1em;
+}
 
+.footer1 {
+    display: flex;
+    align-items: center;
+    height: 66%;
+    width: 100%;
+    /*border: .01em solid lightgrey;*/
+    background-color: #666666;
+    color: white;
+}
+
+.footer2 {
+    display: flex;
+    align-items: center;
+    height: 33%;
+    width: 100%;
+    /*border: .01em solid lightgrey;*/
+    background-color: #333333;
+    color: white;
+}
 
 #logo{
     background-color: gray;
