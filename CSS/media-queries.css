@@ -2,6 +2,7 @@
 
     body {
         background-color: white;
+        font-family: sans-serif;
         /*color: #372f93;*/
         /*margin: 1em;*/
     }
@@ -222,6 +223,8 @@
 
     #social-media-links {
         display: flex;
+        margin-bottom: 1em;
+        /*padding-bottom: .5em;*/
         /*justify-content: space-between*/
     }
 
@@ -245,7 +248,7 @@
     .pop-box img {
         /*display: flex;*/
         /*justify-content: flex-end;*/
-        height: 5em;
+        height: 4.5em;
         width: 9em;
         /*margin-right: 0;*/
         /*grid-area: pop-box;*/
