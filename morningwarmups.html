@@ -44,9 +44,13 @@
 
     function lastItem (ary) {
        return (ary.slice(-1)[0]);
-
     }
-    console.log(lastItem(["This", "Is", "A", "Radio", "Clash", "YEAH!"]))
+    // console.log(lastItem(["This", "Is", "A", "Radio", "Clash", "YEAH!"]))
+
+    var nthItem = function (ary, x) {
+        return ary[x-1];
+    }
+    console.log(nthItem (["vivian","daniel", "justin", "sophie"], 1));
 </script>
 </body>
 </html>
