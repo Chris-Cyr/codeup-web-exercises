@@ -1,0 +1,38 @@
+<script>
+    // convert minutes into seconds
+    function convert(minutes) {
+        return (minutes * 60);
+    }
+
+    console.log(convert(3))
+
+    // check equality for values
+    function checkEquality(a, b) {
+        if (a === b)
+            return true;
+        else
+            return false;
+    }
+    console.log(checkEquality(17, false))
+
+    // function that returns a number + 1
+    function addition(num) {
+        return ++num
+    }
+    console.log(addition(17));
+
+    // returns less or equal to zero
+    function lessThanOrEqualToZero(num) {
+        if (num <= 0)
+        return true;
+        else
+            return false;
+    }
+    console.log(lessThanOrEqualToZero(12));
+
+    // area of a triangle
+    function triArea(base, height) {
+        return ((base * height) / 2);
+    }
+    console.log(triArea(23, 3));
+</script>
