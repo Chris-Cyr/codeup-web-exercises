@@ -17,16 +17,28 @@
             background-image: url("img/pizza-bg.png");
             background-size: cover;
             background-position: center;
-            height: 50vh;
+            height: 20vh;
             width: 100%;
+        }
+
+        a {
+            color: #b9b9b9;
+        }
+
+        nav {
+            background-color: #f8f8f8;
+        }
+
+        .btn {
+            border: .05em solid #b9b9b9;
         }
     </style>
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-dark">
-    <a class="navbar-brand" style="color: white" href="#">Pizza World</a>
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" style="color: #b9b9b9" href="#">Pizza World</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,8 +54,10 @@
             </li>
             <li>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Stores Near You!</button>
+                    <input class="form-control mr-sm-2" style="color: #b9b9b9" type="search" placeholder="Zip Code"
+                           aria-label="Search">
+                    <button class="btn my-2 my-sm-0" style="color: #b9b9b9" type="submit">Search Stores Near You!
+                    </button>
                 </form>
             </li>
         </ul>
@@ -178,7 +192,7 @@
                             <div class="container">
                                 <div class="form-group">
                                     <!--                                    <label for="cheese-type-menu">Example select</label>-->
-                                    <select class="form-control" id="toppings-list">
+                                    <select class="form-control" id="">
                                         <option>Regular</option>
                                         <option>Light</option>
                                         <option>Normal</option>
@@ -231,25 +245,78 @@
             </div>
 
 
-                <!--            Toppings-->
+            <!--            Toppings-->
 
 
-            <div class="tab-pane fade show active" id="toppings" role="tabpanel"
-                 aria-labelledby="toppings-tab">
-            </div>
-            <div class="card">
-                <div class="card-header" ; style="background-color: #007BFE ; color: white">
-                    Choose Toppings
+            <div class="tab-pane fade" id="toppings" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card">
+                    <div class="card-header" ; style="background-color: #007BFE ; color: white">
+                        Choose Toppings
+                    </div>
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header">
+                                Cheese
+                            </div>
+                            <div class="card-body">
+                                How Much?
+                            </div>
+                            <div class="container">
+                                <div class="form-group">
+                                    <!--                                    <label for="cheese-type-menu">Example select</label>-->
+                                    <select class="form-control">
+                                        <option>Regular</option>
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                        <option>Double</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                    Sauce-->
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header">
+                                Sauce
+                            </div>
+                            <div class="card-body">
+                                What Type?
+                            </div>
+                            <div class="container">
+                                <div class="form-group">
+                                    <!--                                    <label for="sauce-type-menu"></label>-->
+                                    <select class="form-control">
+                                        <option>Robust Inspired Tomato Sauce</option>
+                                        <option>Tomato Sauce</option>
+                                        <option>Marinara Sauce</option>
+                                        <option>BBQ Sauce</option>
+                                        <option>Alfredo Sauce</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                What Type?
+                            </div>
+                            <div class="container">
+                                <div class="form-group">
+                                    <!--                                    <label for="sauce-type-menu"></label>-->
+                                    <select class="form-control">
+                                        <option>Regular</option>
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
             </div>
+
+
         </div>
     </div>
 </div>
