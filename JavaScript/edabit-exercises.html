@@ -35,4 +35,18 @@
         return ((base * height) / 2);
     }
     console.log(triArea(23, 3));
+
+    function bonusTime(salary, bonus) {
+        if (bonus == true)
+            return ("£" + (salary * 10) + bonus);
+        else
+            return (salary);
+    }
+
+     function powerRanking (letterInput, stringInput){
+        return stringInput.lastIndexOf(letterInput) - stringInput.indexOf(letterInput);
+     }
+
+     powerRanking("p" , "Penelope is a massive antelope")
+    console.log(powerRanking("s", "Penelope is a massive antelope"));
 </script>
