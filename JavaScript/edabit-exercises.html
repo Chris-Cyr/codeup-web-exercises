@@ -165,4 +165,48 @@
     console.log(growingPlant(80,60,999) + " days");
     console.log(growingPlant(28,5,268) + " days");
 
+    // Maximum Edge of a Triangle
+    // Create a function that finds the maximum range of a triangles third edge.
+
+    // Examples
+    // nextEdge(8, 10) ➞ 17
+
+    // nextEdge(5, 7) ➞ 11
+
+    // nextEdge(9, 2) ➞ 10
+    // Notes
+    // (side1 + side2) - 1 = maximum range of third edge.
+    // Triangles have side lengths that are positive integers.
+    // Don't forget to return the result.
+
+
+    function nextEdge (side1, side2) {
+        return ((side1 + side2) - 1);
+    }
+
+    console.log(nextEdge(7,20));
+
+    // Check if an Integer is Divisible By Five
+    // Create a function that returns true if an integer is divisible by 5, and false otherwise.
+
+    // Examples
+    // divisibleByFive(5) ➞ true
+
+    // divisibleByFive(-55) ➞ true
+
+    // divisibleByFive(37) ➞ false
+    // Notes
+    // Don't forget to return the result.
+    // If you get stuck on a challenge, find help in the Resources tab.
+    // If you're really stuck, unlock solutions in the Solutions tab.
+
+    function divisibleByFive (num) {
+        if (num % 5 === 0)
+            return true;
+        else return false;
+    }
+    console.log(divisibleByFive(300));
+    console.log(divisibleByFive(3));
+    console.log(divisibleByFive(24));
+
 </script>
