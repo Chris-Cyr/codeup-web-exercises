@@ -82,10 +82,12 @@
 
     // determine if age is suitable to enter
     function youMayEnter (ageInput) {
-        if (ageInput >= 13)
+        if (ageInput >= 13) {
             return "You May Enter!";
-        else
+        }
+         else {
             return "Sorry, you need a parent or guardian to enter :(";
+        }
     }
     console.log(youMayEnter(13));
     console.log(youMayEnter(7));
