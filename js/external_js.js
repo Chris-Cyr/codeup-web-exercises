@@ -13,7 +13,6 @@ alert("Great!, " + userInput + " is my favorite color too!");
 var mermaid = prompt("How many nights do you want to keep the Little Mermaid?");
 var brotherBear = prompt("How many nights do you want to keep Brother Bear?");
 var hercules = prompt("How many nights do you want to keep Hercules?");
-console.log(typeof mermaid)
 var movies = ((Number(mermaid) + Number(brotherBear) + Number(hercules)) * 3);
 alert("It will cost $" + (movies) + " to rent these movies");
 
@@ -26,11 +25,11 @@ alert("You earned $" + ((Number(facebook) * 10) + (Number(google) * 6) + (Number
 
 // Enrollment
 var capacity = prompt("How many students are in the class?");
-var conflict = prompt("Does this conflict with your schedule (true or false)?");
+var conflict = prompt("Does this conflict with your schedule (yes or no)?");
 
 
 function canEnroll (capacity, conflict) {
-    if (capacity < 100 && (conflict == "false" || conflict == "False" || conflict == "FALSE"))
+    if (capacity < 100 && (conflict == "no" || conflict == "No" || conflict == "NO"))
         return "You are able to enroll!";
     else
         return "You are unable to enroll.";
@@ -45,7 +44,7 @@ var expired = prompt("Is the offer expired?");
 var premium = prompt("Are you a premium member?");
 
 function canApply (items, expired, premium) {
-    if (expired == "false" && (items >= 2 || premium == "true")){
+    if ((expired == "no" || expired == "No" || expired == "NO") && (items >= 2 || (premium == "yes" || premium == "Yes" || premium == "YES"))){
         return "You are eligible for this offer!";
     } else{
         return "You are currently ineligible for this offer";
