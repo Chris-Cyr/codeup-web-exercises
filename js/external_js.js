@@ -1,27 +1,34 @@
+"use strict";
+
+
 console.log("Hello from external JavaScript")
 
 //alert
 alert("Welcome to my Website!")
 
 //prompt
-var userInput = prompt("What is your favorite color?");
+var userColor = prompt("What is your favorite color?");
 
 //alert 2
-alert("Great!, " + userInput + " is my favorite color too!");
+alert("Great, " + userColor + " is my favorite color too!");
 
 // movies
+var rentalFee = prompt("What is the rental fee?")
 var mermaid = prompt("How many nights do you want to keep the Little Mermaid?");
 var brotherBear = prompt("How many nights do you want to keep Brother Bear?");
 var hercules = prompt("How many nights do you want to keep Hercules?");
-var movies = ((Number(mermaid) + Number(brotherBear) + Number(hercules)) * 3);
-alert("It will cost $" + (movies) + " to rent these movies");
+var moviePrice = ((Number(mermaid) + Number(brotherBear) + Number(hercules)) * Number(rentalFee));
+alert("It will cost $" + (moviePrice) + " to rent these movies");
 
 // money
 var google = prompt("How much did Google give you?");
 var amazon = prompt("How much did Amazon give you?");
 var facebook = prompt("How much did Facebook give you?");
+var googleHours = prompt("How many hours did you work at Google?");
+var amazonHours = prompt("How many hours did you work at Amazon?");
+var facebookHours = prompt("How many hours did you work at Facebook?");
 
-alert("You earned $" + ((Number(facebook) * 10) + (Number(google) * 6) + (Number(amazon) * 4)) + " so far!");
+alert("You earned $" + ((Number(facebook * facebookHours)) + (Number(google * googleHours)) + (Number(amazon * amazonHours))) + " so far!");
 
 // Enrollment
 var capacity = prompt("How many students are in the class?");
@@ -44,7 +51,7 @@ var expired = prompt("Is the offer expired?");
 var premium = prompt("Are you a premium member?");
 
 function canApply (items, expired, premium) {
-    if ((expired == "no" || expired == "No" || expired == "NO") && (items >= 2 || (premium == "yes" || premium == "Yes" || premium == "YES"))){
+    if ((expired == "no" || expired == "No" || expired == "NO") && (items > 2 || (premium == "yes" || premium == "Yes" || premium == "YES"))){
         return "You are eligible for this offer!";
     } else{
         return "You are currently ineligible for this offer";
