@@ -14,9 +14,9 @@
 //
 var favoriteHockeyTeams = ["Canucks", "Maple Leafs", "Islanders"];
 
-// for (var i = 0; i<favoriteHockeyTeams.length;i++){
-//     console.log(favoriteHockeyTeams[i]);
-// }
+for (var i = 0; i<favoriteHockeyTeams.length;i++){
+    console.log(favoriteHockeyTeams[i]);
+}
 
 favoriteHockeyTeams.forEach(function(team, i, favoriteHockeyTeams){
     console.log(team);
