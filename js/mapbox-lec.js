@@ -117,15 +117,54 @@ var restaurants = [
         coordinates: [-98.563280, 29.532770]
     }
 ]
+
+var markers = [
+    {
+        name: "Piccolo's Italiano Restaurant",
+        coordinates: [-98.5981, 29.4893]
+
+    },
+    {
+        name: "Los Barrios",
+        coordinates: [-98.508210, 29.485860]
+    },
+    {
+        name: "Sushi Zushi",
+        coordinates: [-98.563280, 29.532770]
+    }
+]
+
+
+
 function restaurantPopups(restaurantList){
     restaurantList.forEach(function (restaurant) {
         new mapboxgl.Popup()
             .setLngLat(restaurant.coordinates)
             .setHTML("<p>"+restaurant.name+"</p>")
-            .addTo(map)
-    })
-}
+            // .addTo(map);
+        ;
+
+    })}
 restaurantPopups(restaurants)
+
+function createPopup(marker){
+    var popup = new mapboxgl.Popup()
+        .setLngLat(marker.coordinates)
+        .setHTML("<p>"+marker.name+"</p>");
+
+    return popup;
+}
+
+function restaurantMarkers(markerList){
+    markerList.forEach(function(marker){
+        var popup = createPopup(marker);
+
+        new mapboxgl.Marker(markerOptions)
+            .setLngLat(marker.coordinates)
+            .setPopup(popup)
+            .addTo(map)
+    })}
+restaurantMarkers(markers)
 
 // geocode("5703 Evers Rd, San Antonio, TX 78238", mapboxToken).then(function(result){
 //     console.log(result);
