@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="top-div">
+    <h1>Would you like to sign up for our newsletter?</h1>
+    <span>x</span>
+</div>
+<h1>U.S. National Park FAQ</h1>
+<h2 id="8-seconds">Please Register For Our Site :)</h2>
+<h3>Yosemite</h3>
+<ul>
+    <li>For 3,000 years, the park has been inhabited and was visited as long ago as 10,000 years!</li>
+    <li>The highest free climb in history took place on the face of the park's granite escarpment "El Capitan"</li>
+    <li>Contains 160 acres of glaciers</li>
+    <li>Films as varied as "Star Trek V: The Final Frontier", "The Last of the Mohicans", and "Maverick" were filmed in
+        Yosemite!
+    </li>
+</ul>
+<h3>YellowStone</h3>
+<ul>
+    <li>11,000 years ago Native Americans began to hunt in the park.</li>
+    <li>In 1805 the famous Lewis and Clark Expedition connected the European settlers of the Eastern US to the ancient
+        Native American cultures in the park.
+    </li>
+    <li>1872 was a banner year for Yellowstone when President Ulysses S. Grant signed The Act of Dedication which
+        officially recognized Yellowstone as a national park.
+    </li>
+    <li>In 1915 there was a convergence of eras when horse drawn carriages were outlawed due to the thousands of
+        automobiles which began traversing the park each year.
+    </li>
+</ul>
+<h3>Mesa Verde</h3>
+<ul>
+    <li>Nomadic Paleo-Indians settled the Mesa Verde Valley as early as 7500 BC</li>
+    <li>Native Peoples carved houses and living quarters into cliff-sides which still remain in Mesa Verde</li>
+    <li>Mexican-Spanish missionaries re-discovered the long-abandoned ruins of the park in 1776</li>
+    <li>Housing structures contain shale that was a part of the Cretaceous Sea which had completely receded to leave the young rocks.</li>
+</ul>
+<button id="butt">Click To Change Li Colors</button>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    "use strict";
+    $('ul').css('display', 'none');
+    $('h2').hide();
+    $('#8-seconds').delay(8000).fadeIn();
+    $('#butt').click(function () {
+        $('ul').each(function () {
+            $(this).children().last().css('background', 'yellow');
+        })
+    });
+    $('h3').click(function () {
+        $(this).next().slideToggle()
+        // .css('font-weight', 'bold');
+        });
+    $('li').click(function () {
+        $(this).parent().children().first().css('color', 'blue');
+        });
+
+    $('span').click(function(){
+    $('#top-div').hide();
+    });
+
+    // $('h2')(function() {
+    //     $(this).show().fadeIn(1000);
+    // });
+
+</script>
+</body>
+</html>
