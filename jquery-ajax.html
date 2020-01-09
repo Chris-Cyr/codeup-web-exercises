@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script>
+$.ajax("https://api.chucknorris.io/jokes/random")
+        .done(function(obj){
+            console.log(obj);
+            });
+
+$.ajax("https://api.adviceslip.com/advice")
+    .done(function(obj){
+        console.log(obj);
+    });
+
+$.ajax("https://www.tronalddump.io/random/quote")
+    .done(function(data,status, jqXhr){
+        console.log(data);
+        console.log(status);
+        console.log(jqXhr);
+    })
+    .fail(function(jqXhr,status,error){
+        console.log("call failed");
+        console.log(status);
+        console.log(error);
+    })
+    .always(function(){
+        console.log("finally")
+    })
+</script>
+</body>
+</html>
