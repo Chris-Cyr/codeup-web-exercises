@@ -8,6 +8,13 @@
     <title>Weather</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
 </head>
 <body style="background-color: #333940">
 <div class="row mt-2 d-flex justify-content-center bg-dark">
@@ -27,7 +34,18 @@
         <div id="tomorrow_weather" class="d-flex-col justify-content-center"></div>
     </div>
 </div>
+
+<!--Map-->
+<div class="row d-flex justify-content-center">
+<div id="map" class="d-flex col-9 justify-content-center"></div>
 </div>
+
+</body>
+
+
+<!--Script City-->
+
+
 <!--bootstrap script-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -43,10 +61,13 @@
 <!--Jquery Script-->
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!--Key Script-->
+<!--Map Script-->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/mapbox-lec.js"></script>
 
-</body>
+
 <script>
     // Forecast
     $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/29.4241,-98.4936").done(function (data) {
@@ -63,7 +84,7 @@
     // Card 1
     $('#current_weather').append(
         '<div class="d-flex-col justify-content-center">' +
-        '<h5 class="d-flex justify-content-center mt-2">' + "Current Weather " + '</h5>' +
+        '<h4 class="d-flex justify-content-center mt-2">' + "Current Weather " + '</h4>' +
         '<div id="today-image" class="d-flex justify-content-center mt-2" style="width: 100%">' + '</div>' +
         '<p class="d-flex justify-content-center mt-2">' + data.currently.temperature.toFixed() + '° F' + '</p>' +
         '<p class="d-flex justify-content-center mt-2">' + data.currently.summary + '.' + '</p>' +
@@ -120,7 +141,7 @@
     // Card 2
     $('#today_weather').append(
         '<div class="d-flex-col justify-content-center">' +
-        '<h5 class="d-flex justify-content-center mt-2">' + "Today" + '</h5>' +
+        '<h4 class="d-flex justify-content-center mt-2">' + "Today" + '</h4>' +
         '<div id="today-forecast-image" class="d-flex justify-content-center mt-2" style="width: 100%">' + '</div>' +
         '<p class="d-flex justify-content-center mt-2">' + data.daily.data[0].temperatureHigh.toFixed() + '° F / ' + data.daily.data[0].temperatureLow.toFixed() + '° F' + '</p>' +
         '<p class="d-flex justify-content-center mt-2">' + data.daily.data[0].summary + '</p>' +
@@ -175,7 +196,7 @@
 
     $('#tomorrow_weather').append(
         '<div class="d-flex-col justify-content-center">' +
-        '<h5 class="d-flex justify-content-center mt-2">' + "Tomorrow" + '</h5>' +
+        '<h4 class="d-flex justify-content-center mt-2">' + "Tomorrow" + '</h4>' +
         '<div id="tomorrow-weather" class="d-flex justify-content-center mt-2" style="width: 100%">' + '</div>' +
         '<p class="d-flex justify-content-center mt-2">' + data.daily.data[1].temperatureHigh.toFixed() + '° F / ' + data.daily.data[0].temperatureLow.toFixed() + '° F' + '</p>' +
         '<p class="d-flex justify-content-center mt-2">' + data.daily.data[1].summary + '</p>' +
@@ -228,4 +249,5 @@
 
     });
 </script>
+</body>
 </html>
