@@ -6,64 +6,74 @@
 </head>
 <body>
 <script>
-   function helloWorld () {
-       return "Hello World!";
-   }
-   //
-    function helloName (name) {
-       return "Hello" + name + "!";
+    function helloWorld() {
+        return "Hello World!";
     }
+
+    //
+    function helloName(name) {
+        return "Hello" + name + "!";
+    }
+
     // console.log(helloName("Europa"))
 
-    function add (x,y) {
-       return x + y;
-   }
-   // console.log(add(100,87))
+    function add(x, y) {
+        return x + y;
+    }
 
-   function addFour (a, b, c, d) {
-       return (a + b + c + d);
-   }
+    // console.log(add(100,87))
 
-   // console.log(addFour(100,212,13,17))
+    function addFour(a, b, c, d) {
+        return (a + b + c + d);
+    }
 
-    function calculateRectangleArea (x,y) {
+    // console.log(addFour(100,212,13,17))
+
+    function calculateRectangleArea(x, y) {
         return (x * y);
     }
+
     // calculateRectangleArea(22,92)
 
-    function firstItem (ary) {
-       return ary[0];
+    function firstItem(ary) {
+        return ary[0];
     }
+
     // firstItem(["Jesus", "wears", "a", "hat"]);
     // console.log(firstItem(["Jesus", "wears", "a", "hat"]));
 
-    function arrayLength (ary) {
+    function arrayLength(ary) {
         return (ary.length);
     }
+
     // console.log(arrayLength(["what's", "up", "butter", "face", "?", "how", "have", "you", "been", "?"]))
 
-    function lastItem (ary) {
-       return (ary.slice(-1)[0]);
+    function lastItem(ary) {
+        return (ary.slice(-1)[0]);
     }
+
     // console.log(lastItem(["This", "Is", "A", "Radio", "Clash", "YEAH!"]))
 
     var nthItem = function (ary, x) {
-        return ary[x-1];
+        return ary[x - 1];
     }
+
     // console.log(nthItem (["vivian","daniel", "justin", "sophie"], 1));
 
-    function getType (input) {
-      return typeof input;
+    function getType(input) {
+        return typeof input;
     }
-   //
-   // console.log(typeof 4728)
-   // console.log(typeof "Blitz")
-   // console.log(typeof true)
 
-    function put2 (input) {
-       input.push(2);
-       return input;
+    //
+    // console.log(typeof 4728)
+    // console.log(typeof "Blitz")
+    // console.log(typeof true)
+
+    function put2(input) {
+        input.push(2);
+        return input;
     }
+
     // console.log(put2(["bleep", "bloop", "blomp"]))
 
     // function greaterThanTen (input) {
@@ -73,46 +83,50 @@
     //        return false;
     // }
 
-    function greaterThanTen (input) {
-       return input > 10;
+    function greaterThanTen(input) {
+        return input > 10;
     }
+
     console.log(greaterThanTen(6));
     console.log(greaterThanTen(7));
     console.log(greaterThanTen(1000));
 
     // determine if age is suitable to enter
-    function youMayEnter (ageInput) {
+    function youMayEnter(ageInput) {
         if (ageInput >= 13) {
             return "You May Enter!";
-        }
-         else {
+        } else {
             return "Sorry, you need a parent or guardian to enter :(";
         }
     }
+
     console.log(youMayEnter(13));
     console.log(youMayEnter(7));
 
-   //write a js function called seeYouLater that accepts a string. If the string is alligator, return "See you later alligator!", if the string is crocodile, return "After a while crocodile!", if the string is not either, return "So long!"
-    function seeYouLater (inputString) {
+    //write a js function called seeYouLater that accepts a string. If the string is alligator, return "See you later alligator!", if the string is crocodile, return "After a while crocodile!", if the string is not either, return "So long!"
+    function seeYouLater(inputString) {
         if (inputString === "alligator") {
             return ("See you later alligator!");
-        } if (inputString === "crocodile") {
+        }
+        if (inputString === "crocodile") {
             return ("After a while crocodile!");
         } else {
             return ("So long!");
         }
     }
+
     console.log(seeYouLater("alligator"));
     console.log(seeYouLater("crocodile"));
     console.log(seeYouLater("Tottenham"));
 
     //write a function called contains that receives an array and another param and returns true if the param is found in the array. there is an easy way but if you find it maybe try the loop way too.
-   var array= ["poop", "pop", "plop"]
-    function contains(array, input2){
+    var array = ["poop", "pop", "plop"]
+
+    function contains(array, input2) {
         return array.includes(input2)
     }
 
-   console.log(contains([1,2,3], 3));
+    console.log(contains([1, 2, 3], 3));
 
     // santa
     var santa = {
@@ -121,10 +135,157 @@
         wife: "Mrs. Claus",
     }
 
-    function helloSanta(santa){
-        return ("Hello, Santa, " +santa.wife + " made your suit " + santa.suit + " and your hat " + santa.hat + "!");
+    function helloSanta(santa) {
+        return ("Hello, Santa, " + santa.wife + " made your suit " + santa.suit + " and your hat " + santa.hat + "!");
     }
+
     console.log(helloSanta(santa));
+
+    // Loop through the following  array of Reindeer objects and return an array of Reindeer objects that are "gold" reindeer
+    var reindeerList = [
+        {
+            name: "Dot",
+            age: 5,
+            isGold: false
+        },
+        {
+            name: "Dasher",
+            age: 8,
+            isGold: true
+        },
+        {
+            name: "Patch",
+            age: 2,
+            isGold: false
+        },
+        {
+            name: "Rocket",
+            age: 6,
+            isGold: false
+        },
+        {
+            name: "Dancer",
+            age: 9,
+            isGold: true
+        },
+        {
+            name: "Prancer",
+            age: 5,
+            isGold: true
+        },
+        {
+            name: "Groot",
+            age: 9,
+            isGold: false
+        },
+        {
+            name: "Vixen",
+            age: 9,
+            isGold: true
+        },
+        {
+            name: "Comet",
+            age: 11,
+            isGold: true
+        },
+        {
+            name: "Archie",
+            age: 3,
+            isGold: false
+        },
+        {
+            name: "Cupid",
+            age: 13,
+            isGold: true
+        },
+        {
+            name: "Donder",
+            age: 16,
+            isGold: true
+        },
+        {
+            name: "Boots",
+            age: 16,
+            isGold: false
+        },
+        {
+            name: "Blizten",
+            age: 16,
+            isGold: true
+        }
+    ]
+
+    // function getGoldReindeer(reindeerArray){
+    //    var bucket = [];
+    //
+    //    for(var i = 0; i<reindeerArray.length;i++) {
+    //        console.log(reindeerArray[i].isGold);
+    //        if(reindeerArray[i].isGold===true){
+    //            bucket.push(reindeerArray[i]);
+    //        }
+    //    }
+    //    return bucket;
+    // }
+
+    // console.log(getGoldReindeer(reindeerList));
+
+    function getGoldReindeer(reindeerArray) {
+        var bucket = [];
+
+        reindeerArray.forEach(function (reindeer) {
+            if (reindeer.isGold === true) {
+                bucket.push(reindeer);
+            }
+        })
+        return bucket;
+    }
+
+    console.log(getGoldReindeer(reindeerList));
+
+
+    var hamsters = [
+        {
+            name: "Hamtaro",
+            heightInMM: 86,
+            fur: ['orange', 'white'],
+            gender: "male",
+            dateOfBirth: "August 6"
+        }, {
+            name: "Bijou",
+            heightInMM: 75,
+            fur: ['white'],
+            gender: "female",
+            dateOfBirth: "July 10"
+        }, {
+            name: "Oxnard",
+            heightInMM: 100,
+            fur: ['grey', 'white'],
+            gender: "male",
+            dateOfBirth: "May 3"
+        }, {
+            name: "Boss",
+            heightInMM: 120,
+            fur: ['brown', 'white'],
+            gender: "male",
+            dateOfBirth: "Spetember 21"
+        }, {
+            name: "Snoozer",
+            heightInMM: 85,
+            fur: ['brown', 'white', "pink"],
+            gender: "male",
+            dateOfBirth: "January 14"
+        }
+    ];
+
+    function hamsterHeight(arr) {
+        var total = 0;
+        arr.forEach(function (hamHam) {
+            total += hamHam.heightInMM
+        });
+        return total / arr.length;
+    }
+    console.log(hamsterHeight(hamsters))
+
 </script>
 </body>
 </html>
