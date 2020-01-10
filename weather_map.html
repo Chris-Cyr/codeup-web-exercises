@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="row d-flex justify-content-center">
+
+    <!--    Card 1-->
+    <div class="card col-3 ml-1 mr-1 d-flex justify-content-center">
+<div id="current_weather"></div>
+    </div>
+
+    <!--    Card 2-->
+    <div class="card col-3 ml-1 mr-1 d-flex justify-content-center">
+        <div id="today_weather"></div>
+    </div>
+
+    <!--    Card 3-->
+    <div class="card col-3 ml-1 mr-1 d-flex justify-content-center">
+        <div id="tomorrow_weather" class="d-flex-col justify-content-center"></div>
+    </div>
+</div>
+
+<!--bootstrap script-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+<!--Jquery Script-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--Key Script-->
+<script src="js/keys.js"></script>
+
+
+<script>
+    // Forecast
+    $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/" + darkSkyKey + "/29.4241,-98.4936").done(function (data) {
+        console.log(data);
+        // var dateObject = new Date(data.currently.time * 1000);
+        // console.log (dateObject);
+
+        // Card 1
+        $('#current_weather').append(
+            '<div class="d-flex-col justify-content-center">' +
+            '<h5 class="d-flex justify-content-center">' + "Current Weather " + '</h5>' +
+            '<img src="img/sun.jpeg" class="mt-2" style="width: 100%">' +
+            '<p class="d-flex justify-content-center mt-2">' + data.currently.temperature + '° F' +'</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "The Sky is " + data.currently.summary + '</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "Humidity: " + data.currently.humidity + "%" + '</p>'+
+            '<p class="d-flex justify-content-center mt-2">' + "Wind: " + data.currently.windSpeed + " MPH" + '</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "Pressure: " + data.currently.pressure + '</p>' +
+            '</div>'
+        );
+
+        // Card 2
+        $('#today_weather').append(
+            '<div class="d-flex-col justify-content-center">' +
+            '<h5 class="d-flex justify-content-center">' + "Current Weather " + '</h5>' +
+            '<img src="img/sun.jpeg" class="mt-2" style="width: 100%">' +
+            '<p class="d-flex justify-content-center mt-2">' + data.currently.temperature + '° F' +'</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "The Sky is " + data.currently.summary + '</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "Humidity: " + data.currently.humidity + "%" + '</p>'+
+            '<p class="d-flex justify-content-center mt-2">' + "Wind: " + data.currently.windSpeed + " MPH" + '</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "Pressure: " + data.currently.pressure + '</p>' +
+            '</div>'
+        );
+
+        // Card 3
+
+        $('#tomorrow_weather').append(
+            '<div class="d-flex-col justify-content-center">' +
+            '<h5 class="d-flex justify-content-center">' + "Current Weather " + '</h5>' +
+            '<img src="img/sun.jpeg" class="mt-2" style="width: 100%">' +
+            '<p class="d-flex justify-content-center mt-2">' + data.currently.temperature + '° F' +'</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "The Sky is " + data.currently.summary + '</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "Humidity: " + data.currently.humidity + "%" + '</p>'+
+            '<p class="d-flex justify-content-center mt-2">' + "Wind: " + data.currently.windSpeed + " MPH" + '</p>' +
+            '<p class="d-flex justify-content-center mt-2">' + "Pressure: " + data.currently.pressure + '</p>' +
+            '</div>'
+        );
+    });
+</script>
+</body>
+</html>
