@@ -286,6 +286,28 @@
     }
     console.log(hamsterHeight(hamsters))
 
+
+    // function alphabetize(word){
+    //     if (!word){
+    //         return;
+    //     }
+    //     word = word.split('');
+    //     word = word.sort();
+    //     word = word.join('');
+    //     return word;
+    // }
+
+    // console.log(alphabetize("deeasdr"))
+    // Anagram Function
+    function isAnagram (word1, word2){
+        letters1 = word1.toLowerCase().split('').sort();
+        letters2 = word2.toLowerCase().split('').sort();
+        return (letters1.join() == letters2.join());
+
+    }
+    console.log(isAnagram("deer","reed"));
+    console.log(isAnagram("something", "thingsome"));
+    console.log(isAnagram("whatever", "who cares"));
 </script>
 </body>
 </html>
