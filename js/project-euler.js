@@ -19,3 +19,4 @@ function multiples35(input){
 console.log(multiples35(999));
 console.log(multiples35(500));
 console.log(multiples35(29));
+console.log(multiples35(347));
