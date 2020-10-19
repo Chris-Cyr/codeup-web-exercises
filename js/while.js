@@ -30,3 +30,5 @@
 //     }
 //
 // } while (allCones > 0);
+
+console.log("This is a test");
