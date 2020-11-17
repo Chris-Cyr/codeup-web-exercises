@@ -165,10 +165,10 @@
 
     function booksOnTheShelf(books) {
 
-        console.log(books.title [0]);
         console.log(books.title);
-        console.log(books.author [0]);
-        console.log(books.author [1]);
+        console.log(books.title);
+        console.log(books.author.firstName);
+        console.log(books.author.lastName);
     }
 
     books.forEach(booksOnTheShelf);
